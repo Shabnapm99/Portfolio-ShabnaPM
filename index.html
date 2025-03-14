@@ -23,7 +23,7 @@
 </head>
 <body style="box-sizing: border-box;" id="portfolio">
   <div class="">
-    <header class="position-fixed w-100" style="z-index: 1;"> <!--z-index : to give priority to this component-->
+    <header class="sticky-top" style="z-index: 1;"> <!--z-index : to give priority to this component-->
       <div class="container-fluid bg-dark ps-2 pe-2 ps-md-5 pe-md-5" >
         <!--<div class="row">-->
             <!--<div class="col-9 col-md-3 text-start text-md-end pe-4">-->
@@ -194,7 +194,7 @@
         </div>
 
     </section>
-    <section id="experience" class="bg-light border-bottom">
+    <section id="experience" class="bg-light border-bottom p-5">
       <div class="container-fluid align-items-center">
         <h2 class="text-center pb-3">Experience</h2>
         <div class="container">
@@ -226,7 +226,7 @@
                       <img src="media/portfolio.png" class="card-img-top" alt="Image">
                       <div class="card-body">
                         <h5 class="card-title text-center">Portfolio</h5>
-                        <p class="card-text text-center">A nice & professionally looking portfolio built for myself using <i>HTML, CSS & Bootstrap</i></p>
+                        <p class="card-text text-center">A nice & professionally looking portfolio built for myself using <i>HTML, CSS, Bootstrap & jquery </i></p>
                       </div>
                   </div></a>
                 </div>
@@ -246,29 +246,30 @@
           
          </div>
     </section>
-    <section id="contactme" class="bg-light border-bottom p-md-5 align-items-center">
+    <section id="contactme" class="bg-light border-bottom p-5 align-items-center">
       <h2 class="text-center pb-3">Contact Me</h2>
       <div class="container align-items-center">
         <div class="row justify-content-center">
-          <div class="col-10 col-md-6 ">
-            <form class="bg-white p-5 rounded">
+          <div class="col-12 col-md-6 ">
+            <form class="bg-white p-5 rounded" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="49f9e259-c8ec-47d2-a53b-cbe3ebc9cd22">
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name">
+                <input type="text" class="form-control" id="name" name="name">
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" name="email">
                 
               </div>
               <div class="mb-3">
                 <label for="mobile" class="form-label">Mobile</label>
-                <input type="tel" class="form-control" id="mobile">
+                <input type="tel" class="form-control" id="mobile" name="mobNumber">
               </div>
               <div class="mb-3">
                 <label for="message" class="form-label">Message</label>
                 <!-- <input type="text-area" class="form-control" id="me"> -->
-                <textarea id="message" class="form-control"></textarea>
+                <textarea id="message" class="form-control" name="message"></textarea>
               </div>
             <div class="text-end">
               <button type="submit" class="btn w-50" style="background-color: blueviolet;color: white;">Submit</button>
@@ -309,11 +310,14 @@
           //$("div.navbar-collapse").slideToggle()
           $(".navbar-collapse").collapse("hide")//Uses Bootstrap’s built-in collapse() method for smooth transitions.
         })
-      $(".navbar-toggler").on("click",function(){
+        $(".navbar-toggler").on("click",function(){
         //$(".navbar-collapse").toggle()//toggle (show and hide) when clicked on collpase button.slideToggle() is not working as expected
-         $(".navbar-collapse").collapse("toggle")
+          $(".navbar-collapse").collapse("toggle")
         //$("#navbarSupportedContent").collapse("toggle")//these didn't work as expected first, however when i used only bootstrap bundle CDN it worked
-      })      })
+      })
+           
+    
+    })
     </script>
   </body>
 </html>
