@@ -54,11 +54,11 @@
                                   <li class="nav-item pe-3">
                                     <a class="nav-link text-light" href="#projects">Projects</a>
                                   </li>
-                                  <li class="nav-item pe-3">
+                                  <!-- <li class="nav-item pe-3">
                                     <a class="nav-link text-light" href="#">Resume</a>
-                                  </li>
+                                  </li> -->
                                   <li class="nav-item pe-3">
-                                    <a class="nav-link text-light" href="#contactme">Contact</a>
+                                    <a class="nav-link text-light" href="#contactme">Contact Me</a>
                                   </li>
                                 <!-- <li class="nav-item p-2 pe-3">Home</li>
                                 <li class="nav-item p-2 pe-3">Resume</li>
@@ -233,7 +233,7 @@
                 <div class="col-12 col-md-4">
                   <a href="" style="text-decoration: none;">
                     <div class="card h-100">
-                        <img src="" class="card-img-top" alt="Image">
+                        <img src="media/Counter.png" class="card-img-top" alt="Image">
                         <div class="card-body">
                           <h5 class="card-title text-center">Counter App</h5>
                           <p class="card-text text-center">A nice & simple counter app is created using <i>HTML, CSS, Bootstrap and React.</i></p>
@@ -246,13 +246,23 @@
           
          </div>
     </section>
-    <section id="contactme" class="bg-light border-bottom p-5 align-items-center">
+    <!-- <section id="resume" class="container my-5 text-center">
+      <h2>Resume</h2>
+        <p>If you would like a copy of my resume, please click the button below.</p>
+        <a href="mailto:" class="btn btn-primary">Request Resume</a>
+      
+  </section> -->
+    <section id="contactme" class="bg-light border-bottom p-5">
+      <!-- for sending email i have used Web3Forms -->
       <h2 class="text-center pb-3">Contact Me</h2>
+      <p class="text-center">If you would like a copy of my resume, please fill the form.</p>
       <div class="container align-items-center">
         <div class="row justify-content-center">
           <div class="col-12 col-md-6 ">
             <form class="bg-white p-5 rounded" action="https://api.web3forms.com/submit" method="POST">
               <input type="hidden" name="access_key" value="49f9e259-c8ec-47d2-a53b-cbe3ebc9cd22">
+              <input type="hidden" name="recaptcha" value="true">
+              <input type="text" name="hp" style="display: none;">
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control" id="name" name="name">
@@ -262,10 +272,10 @@
                 <input type="email" class="form-control" id="inputEmail" name="email">
                 
               </div>
-              <div class="mb-3">
+              <!-- <div class="mb-3">
                 <label for="mobile" class="form-label">Mobile</label>
                 <input type="tel" class="form-control" id="mobile" name="mobNumber">
-              </div>
+              </div> -->
               <div class="mb-3">
                 <label for="message" class="form-label">Message</label>
                 <!-- <input type="text-area" class="form-control" id="me"> -->
@@ -315,7 +325,7 @@
           $(".navbar-collapse").collapse("toggle")
         //$("#navbarSupportedContent").collapse("toggle")//these didn't work as expected first, however when i used only bootstrap bundle CDN it worked
       })
-           
+
     
     })
     </script>
