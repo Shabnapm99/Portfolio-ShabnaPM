@@ -265,8 +265,7 @@
       <div class="container align-items-center">
         <div class="row justify-content-center">
           <div class="col-12 col-md-6 ">
-            <form class="bg-white p-5 rounded" id="contactForm">
-            <!-- action="https://api.web3forms.com/submit" method="POST"> -->
+            <form class="bg-white p-5 rounded" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
               <input type="hidden" name="access_key" value="49f9e259-c8ec-47d2-a53b-cbe3ebc9cd22">
               <input type="hidden" name="recaptcha" value="true">
               <input type="text" name="hp" style="display: none;">
@@ -333,25 +332,25 @@
         //$("#navbarSupportedContent").collapse("toggle")//these didn't work as expected first, however when i used only bootstrap bundle CDN it worked
       })
       /*to show a customized page after submitting the form we can use ajax(with out refreshing the page)*/
-      $("#contactForm").submit(function(event){
-         event.preventDefault()//Prevent default form submission, ie this will prevent showing the thankyou page of Web3forms
-         $.ajax({
-          url:"https://api.web3forms.com/submit",
-          type:"POST",
-          data:$("#contactForm").serialize(),
-          dataType: "json",
-          success:function(response){
-            if(response.success){
-            alert("Thankyou for reaching me")
-          }else{
-            alert(`Submission failed ${response.message}`)
-          }
-          },
-          error:function(xhr) {
-        alert("An error occurred: " + xhr.responseText);
-         }
-         })
-        })
+      // $("#contactForm").submit(function(event){
+      //    event.preventDefault()//Prevent default form submission, ie this will prevent showing the thankyou page of Web3forms
+      //    $.ajax({
+      //     url:"https://api.web3forms.com/submit",
+      //     type:"POST",
+      //     data:$("#contactForm").serialize(),
+      //     dataType: "json",
+      //     success:function(response){
+      //       if(response.success){
+      //       alert("Thankyou for reaching me")
+      //     }else{
+      //       alert(`Submission failed ${response.message}`)
+      //     }
+      //     },
+      //     error:function(xhr) {
+      //   alert("An error occurred: " + xhr.responseText);
+      //    }
+      //    })
+      //   })
     
     })
     </script>
