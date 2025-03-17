@@ -19,78 +19,54 @@
         .custom-width{width:75%;}
         
       } */
+       .card{
+        border-top: solid 0.3em blueviolet;
+       }
     </style>
 </head>
 <body style="box-sizing: border-box;" id="portfolio">
   <div>
     <!-- Header -->
+
     <header class="sticky-top" style="z-index: 1;"> <!--z-index : to give priority to this component-->
       <div class="container-fluid bg-dark ps-2 pe-2 ps-md-5 pe-md-5" >
-        <!--<div class="row">-->
-            <!--<div class="col-9 col-md-3 text-start text-md-end pe-4">-->
-                <!-- <h2 class="text-light ps-3 p-2">Shabna P M</h2> -->
-                <!-- <img src="media/photo.jpg" alt="photo" class="rounded-circle border border-white border-5 img-fluid " style="width:100px;height: 100px;">
-            </div> -->
-            <!-- <div class="col-3 col-md-9 pe-3"> -->
-                <!-- Navbar -->
-                <nav class="navbar navbar-expand-md navbar-dark">
-                     <div class="container-fluid">
-                        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button> -->
-                        <a class="navbar-brand text-light fs-4 fw-bold p-0" href="#about"><img src="media/photo.jpg" alt="photo" width="50" height="50" class="rounded-circle border border-white img-fluid d-inline-block align-text-center">
-                          Shabna P M<b style="color:blueviolet">.</b></a>
-                          <!-- Move the Button to the Right -->
-                          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav ms-auto fs-6">
-                                <li class="nav-item pe-3">
-                                    <a class="nav-link active text-light" aria-current="page" href="#about">About</a>
-                                  </li>
-                                  <li class="nav-item pe-3">
-                                    <a class="nav-link text-light" href="#experience">Experience</a>
-                                  </li>
-                                  <li class="nav-item pe-3">
-                                    <a class="nav-link text-light" href="#projects">Projects</a>
-                                  </li>
-                                  <!-- <li class="nav-item pe-3">
-                                    <a class="nav-link text-light" href="#">Resume</a>
-                                  </li> -->
-                                  <li class="nav-item pe-3">
-                                    <a class="nav-link text-light" href="#contactme">Contact Me</a>
-                                  </li>
-                                <!-- <li class="nav-item p-2 pe-3">Home</li>
-                                <li class="nav-item p-2 pe-3">Resume</li>
-                                <li class="nav-item p-2 pe-3">Contact</li> -->
-                            </ul>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light fs-4 fw-bold p-0" href="#about"><img src="media/photo.jpg" alt="photo" width="50" height="50" class="rounded-circle border border-white img-fluid d-inline-block align-text-center">
+                  Shabna P M<b style="color:blueviolet">.</b></a>
+                  <!-- Move the Button to the Right -->
+                  <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto fs-6">
+                        <li class="nav-item pe-3">
+                            <a class="nav-link active text-light" aria-current="page" href="#about">About</a>
+                          </li>
+                          <li class="nav-item pe-3">
+                            <a class="nav-link text-light" href="#experience">Experience</a>
+                          </li>
+                          <li class="nav-item pe-3">
+                            <a class="nav-link text-light" href="#projects">Projects</a>
+                          </li>
+                          <!-- <li class="nav-item pe-3">
+                            <a class="nav-link text-light" href="#">Resume</a>
+                          </li> -->
+                          <li class="nav-item pe-3">
+                            <a class="nav-link text-light" href="#contactme">Contact Me</a>
+                          </li>
+                    </ul>
 
-                        </div>
-                     </div>              
-                </nav>
-             <!-- </div> 
-        </div>-->
-   </div>
-    </header>
-    <!-- <section id="about" class="p-4 text-white" style="background-color: rgb(201, 158, 240);">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <div class="col-md-5 text-center">
-                    <img src="media/photo.jpg" class="rounded-circle img-fluid alig" >
-                </div> 
-                <div class="col-md-7 text-center">
-                    <h1>Hi, I'm Shabna P M</h1>
-                    <h5>Front-End Developer | SAP Commerce Cloud Developer/Support<br>
-                    Kozhikode, Kerala, India</h5>
-                    <p>I am a software professional with experience in SAP Commerce Cloud (Hybris) and front-end development.</p>
-                </p>
                 </div>
-            </div>
-        </div>
-    </section> -->
+            </div>              
+        </nav>
+   </div>
+  </header>
+
     <!-- About me section -->
-    <section id="about" class="pb-5 text-white" style="background-color:blueviolet;padding-top: 13em;">
+
+    <section id="about" class="pb-5 text-white" style="background-color:blueviolet;padding-top: 5em;">
       <div class="align-items-center text-center">
         <h1 class="pb-4">Hi, I'm Shabna P M</h1>
         <h5>Front-End Developer | SAP Commerce Cloud Developer/Support<br>
@@ -118,6 +94,7 @@
       </div>
 
     </section>
+
     <!-- Skills section -->
     <section id="skills" class="bg-light border-bottom p-5">
         <div class="container-fluid p-3">
@@ -197,7 +174,9 @@
         </div>
 
     </section>
+
     <!-- Experience section -->
+
     <section id="experience" class="bg-light border-bottom p-5">
       <div class="container-fluid align-items-center">
         <h2 class="text-center pb-3">Experience</h2>
@@ -219,7 +198,9 @@
         </div>
       </div>
     </section>
+
     <!-- Projects section -->
+
     <section id="projects" class="bg-light border-bottom p-5">
          <div class="container-fluid">
             <h2 class="text-center pb-3">Projects</h2>
@@ -257,7 +238,9 @@
         <a href="mailto:" class="btn btn-primary">Request Resume</a>
       
   </section> -->
+
   <!-- Contact me section -->
+
     <section id="contactme" class="bg-light border-bottom p-5">
       <!-- for sending email i have used Web3Forms -->
       <h2 class="text-center pb-3">Contact Me</h2>
@@ -271,11 +254,11 @@
               <input type="text" name="hp" style="display: none;">
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" name="name">
+                <input type="text" class="form-control" id="name" name="name" required>
               </div>
               <div class="mb-3">
                 <label for="inputEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail" name="email">
+                <input type="email" class="form-control" id="inputEmail" name="email" required>
                 
               </div>
               <!-- <div class="mb-3">
@@ -285,10 +268,11 @@
               <div class="mb-3">
                 <label for="message" class="form-label">Message</label>
                 <!-- <input type="text-area" class="form-control" id="me"> -->
-                <textarea id="message" class="form-control" name="message"></textarea>
+                <textarea id="message" class="form-control" name="message" required></textarea>
               </div>
-              <input type="hidden" name="redirect" value="https://shabnapm99.github.io/Portfolio-ShabnaPM/thank-you.html">
-            <div class="text-end">
+              <!-- <input type="hidden" name="redirect" value="https://shabnapm99.github.io/Portfolio-ShabnaPM/thank-you.html"> -->
+              
+              <div class="text-end">
               <button type="submit" class="btn w-50" style="background-color: blueviolet;color: white;">Submit</button>
             </div>
               
@@ -352,7 +336,11 @@
       //    }
       //    })
       //   })
-    
+      // $("#contactForm").submit(function(event){
+      //   event.preventDefault()
+      //   $("[name=redirect]").val(window.location.origin + "/thank-you.html");
+
+     // })
     })
     </script>
   </body>
