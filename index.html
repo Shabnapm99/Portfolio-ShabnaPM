@@ -24,12 +24,12 @@
        }
     </style>
 </head>
-<body style="box-sizing: border-box;" id="portfolio">
+<body style="box-sizing: border-box;" id="portfolio" class="bg-dark">
   <div>
     <!-- Header -->
 
     <header class="sticky-top" style="z-index: 1;"> <!--z-index : to give priority to this component-->
-      <div class="container-fluid bg-dark ps-2 pe-2 ps-md-5 pe-md-5" >
+      <div class="container-fluid bg-dark ps-2 pe-2 ps-md-5 pe-md-5 header-div" >
         <!-- Navbar -->
         <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container-fluid">
@@ -66,7 +66,7 @@
 
     <!-- About me section -->
 
-    <section id="about" class="pb-5 text-white" style="background-color:blueviolet;padding-top: 5em;">
+    <section id="about" class="pb-5 text-white bg-dark" style="background-image:url('media/bg.svg');padding-top: 5em;">
       <div class="align-items-center text-center">
         <h1 class="pb-4">Hi, I'm Shabna P M</h1>
         <h5>Front-End Developer | SAP Commerce Cloud Developer/Support<br>
@@ -341,6 +341,13 @@
       //   $("[name=redirect]").val(window.location.origin + "/thank-you.html");
 
      // })
+     $(document).on("scroll", function() {
+    if ($(this).scrollTop() > 0) {
+        $(".header-div").addClass("bg-opacity-75");//If scrolled down (> 0),
+    } else {
+        $(".header-div").removeClass("bg-opacity-75"); // Remove class when scrolled to the top
+    }
+})
     })
     </script>
   </body>
